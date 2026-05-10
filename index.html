@@ -248,16 +248,15 @@ footer{background:var(--accent);color:rgba(255,255,255,.75);text-align:center;pa
   margin-bottom: 12px;
 }
 
-/* ── TABLET (768px - 1024px) ── */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .layout { grid-template-columns: 200px 1fr; }
-  .sidebar { padding: 18px 14px; }
-  .photo-wrap img { width: 150px; height: 150px; }
-  .content-area { padding: 24px 24px; }
+/* ── TABLET (768px - 900px only) ── */
+@media (max-width: 900px) and (min-width: 769px) {
+  .layout { grid-template-columns: 190px 1fr; }
+  .sidebar { padding: 16px 12px; }
+  .photo-wrap img { width: 145px; height: 145px; }
+  .content-area { padding: 22px 20px; }
   .home-grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-row .stat-box { min-width: 100px; }
-  .topbar-nav a { padding: 0 12px; font-size: 12.5px; }
+  .topbar-nav a { padding: 0 11px; font-size: 12.5px; }
 }
 
 /* ── MOBILE (max 768px) ── */
