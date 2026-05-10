@@ -106,6 +106,21 @@ body{font-family:'Source Sans 3',sans-serif;font-size:15px;color:var(--text);bac
 .skills-table tr:last-child td{border:none;}
 .skills-table td:first-child{font-weight:600;color:var(--text);width:150px;background:var(--off-white);}
 
+/* ── EDUCATION / EXPERIENCE ── */
+.edu-item{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--border-light);font-size:13.5px;}
+.edu-item:last-child{border:none;}
+.edu-year{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-muted);flex-shrink:0;min-width:115px;padding-top:2px;}
+.edu-deg{font-weight:600;color:var(--text);}
+.edu-school{color:var(--text-secondary);font-size:13px;}
+.edu-grade{color:var(--text-muted);font-size:12.5px;}
+.exp-item{padding:12px 0;border-bottom:1px solid var(--border-light);}
+.exp-item:last-child{border:none;}
+.exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+.exp-role{font-weight:600;font-size:14px;color:var(--text);}
+.exp-period{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-muted);white-space:nowrap;}
+.exp-org{color:var(--accent-light);font-size:13px;margin:2px 0 5px;}
+.exp-details{color:var(--text-secondary);font-size:13.5px;line-height:1.65;}
+
 /* ── RESEARCH ── */
 .research-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:28px;}
 .r-card{background:var(--off-white);border:1px solid var(--border-light);border-left:3px solid var(--accent);border-radius:4px;padding:14px 16px;}
@@ -134,21 +149,6 @@ body{font-family:'Source Sans 3',sans-serif;font-size:15px;color:var(--text);bac
 .pt-j{background:var(--accent-bg);color:var(--accent);}
 .pt-c{background:#fce4ec;color:#ad1457;}
 .pt-w{background:#f3e5f5;color:#6a1b9a;}
-
-/* ── EDUCATION / EXPERIENCE ── */
-.edu-item{display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--border-light);font-size:13.5px;}
-.edu-item:last-child{border:none;}
-.edu-year{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-muted);flex-shrink:0;min-width:115px;padding-top:2px;}
-.edu-deg{font-weight:600;color:var(--text);}
-.edu-school{color:var(--text-secondary);font-size:13px;}
-.edu-grade{color:var(--text-muted);font-size:12.5px;}
-.exp-item{padding:12px 0;border-bottom:1px solid var(--border-light);}
-.exp-item:last-child{border:none;}
-.exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
-.exp-role{font-weight:600;font-size:14px;color:var(--text);}
-.exp-period{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--text-muted);white-space:nowrap;}
-.exp-org{color:var(--accent-light);font-size:13px;margin:2px 0 5px;}
-.exp-details{color:var(--text-secondary);font-size:13.5px;line-height:1.65;}
 
 /* ── TEAM ── */
 .team-intro{font-size:14px;color:var(--text-secondary);margin-bottom:20px;line-height:1.7;}
@@ -320,7 +320,7 @@ footer{background:var(--accent);color:rgba(255,255,255,.75);text-align:center;pa
     <!-- RESEARCH -->
     <div class="page" id="page-research">
       <div class="sec-heading">Research</div>
-      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;line-height:1.7;">My research lies at the intersection of power systems, smart grid technologies, and optimization. I investigate how distribution network resources can actively contribute to grid stability and ancillary service markets.</p>
+      <p style="font-size:14px;color:var(--text-secondary);margin-bottom:20px;line-height:1.7;">My research lies at the intersection of power systems, smart grid technologies, and optimization. I investigate how distribution network resources can actively contribute to grid stability and ancillary services for operational and control purposes.</p>
       <div class="sec-sub">Research Areas</div>
       <div class="research-grid">
         <div class="r-card"><div class="r-icon">⚡</div><div class="r-title">Ancillary Services from Distribution Networks</div><div class="r-desc">Operational reserve, voltage regulation, PFR and SFR from active distribution network resources.</div></div>
@@ -333,8 +333,8 @@ footer{background:var(--accent);color:rgba(255,255,255,.75);text-align:center;pa
       <div class="sec-sub">Research Projects</div>
       <table class="project-table">
         <tr><th>Project</th><th>Description</th><th>Period</th></tr>
-        <tr><td><strong>GREET</strong><br><small>Grid Readiness for EV</small></td><td>Assessed EV integration potential for reliable ancillary service support in distribution networks.</td><td>2020–Present</td></tr>
-        <tr><td><strong>Smart Grid Control Centre</strong></td><td>Smart grid resilience and distributed energy integration. Control strategies for DER management.</td><td>2021–Present</td></tr>
+        <tr><td><strong>GREET</strong><br><small>Grid Readiness for EV</small></td><td>Assessed EV integration potential for reliable ancillary service support in distribution networks.</td><td>Sep-Dec 2025</td></tr>
+        <tr><td><strong>Smart Grid Control Centre</strong></td><td>Smart grid resilience and distributed energy integration. Control strategies for DER management.</td><td>Jan-Feb 2026</td></tr>
         <tr><td><strong>UI-ASSIST</strong><br><small>WSU, USA</small></td><td>Load flow study, Virtual Storage Bank formation using EV/E-buses; validated on distribution network models.</td><td>Jun–Aug 2023</td></tr>
       </table>
     </div>
@@ -445,7 +445,7 @@ footer{background:var(--accent);color:rgba(255,255,255,.75);text-align:center;pa
   </div><!-- end content-area -->
 </div><!-- end layout -->
 
-<footer>&copy; 2025 Shubham Verma &nbsp;&mdash;&nbsp; Ph.D. Researcher, IIT Kanpur &nbsp;&mdash;&nbsp; Last updated: May 2026</footer>
+<footer>&copy; 2026 Shubham Verma &nbsp;&mdash;&nbsp; Ph.D. Researcher, IIT Kanpur &nbsp;&mdash;&nbsp; Last updated: 10 May 2026</footer>
 
 <script>
 // ── PAGES CONFIG ──
